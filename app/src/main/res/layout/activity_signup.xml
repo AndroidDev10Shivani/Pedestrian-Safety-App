@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="software.user.example.admin.pedestrian_safety.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_marginBottom="20dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+    >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:src="@mipmap/ic_launcher"
+          android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editTextName"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Name"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_text_style"
+            android:id="@+id/editTextUsername"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Email"
+            android:layout_below="@+id/editTextName"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editTextPassword"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Password"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@+id/editTextUsername"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:maxLength="10"
+            android:id="@+id/editTextMobile1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_text_style"
+            android:hint="Enter Mobile Number"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/buttonRegister"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button480"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editTextMobile1" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
